@@ -8,10 +8,10 @@ export default function Header(){
                 <span>Krypto</span>
             </div>
             <div className="items">
+                <a href="/">Home</a>
                 <a href="/about-us">About</a>
                 <a href="">Pricing</a>
                 <a href="">Contact</a>
-                <a href="">Buy nfts</a>
             </div>
         </nav>
     </header>

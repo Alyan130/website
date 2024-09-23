@@ -234,8 +234,8 @@ opacity: 1;
 
 #featured {
   border: 0px white solid;
-  width: 100%;
-  padding: 10px 132px;
+  width: 90%;
+  padding: 22px 132px;
   text-align: center;
   margin-top: 30px;
 }
@@ -249,16 +249,17 @@ opacity: 1;
 
 .features {
   background-color: #2c2660;
-  width: 80%;
-  padding: 2px;
+  width: 0%;
+  padding: 22px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 20px;
   position: relative;
-  animation: scroll-animation 5s ease-in-out 0s infinite;
+  animation: scroll-animation 3s ease-in-out 1s forwards;
   overflow: hidden;
+  opacity: 0.4;
 }
 
 .company {
@@ -295,15 +296,10 @@ opacity: 1;
 
 /* Animation */
 @keyframes scroll-animation {
-  0% {
-    margin-left: 0;
-  }
-  50% {
-    margin-left: 110px;
-  }
-  100% {
-    margin-left: -110px;
-  }
+100%{
+  width:109%;
+  opacity: 1;
+}
 }
 
 /* Media Queries */
@@ -352,15 +348,10 @@ opacity: 1;
 
 /* Mobile Animation */
 @keyframes scroll-animation-mobile {
-  0% {
-    margin-left: 0;
-  }
-  50% {
-    margin-left: 20px;
-  }
-  100% {
-    margin-left: -20px;
-  }
+100%{
+  width: 100%;
+  opacity: 1;
+}
 }
 
 /* Small Mobile */
@@ -376,20 +367,17 @@ opacity: 1;
   }
 
   .features {
-    animation: scroll-animation-small-mobile 5s ease-in-out 0s infinite;
+    animation: scroll-animation-small-mobile 2s ease-in-out 1s forwards;
+    width: 1%;
   }
 }
 
 /* Small Mobile Animation */
 @keyframes scroll-animation-small-mobile {
-  0% {
-    margin-left: 0;
-  }
-  50% {
-    margin-left: 25px;
-  }
-  100% {
-    margin-left: -25px;
+  100%{
+    width: 180%;
+    opacity: 1;
+    margin-left: -10px;
   }
 }
 
@@ -687,3 +675,372 @@ margin-left: 2px;
   }
 }
 
+
+
+
+/* Main section styling */
+#testimonials {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 78px;
+}
+
+#testimonials h2 {
+  font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 3%;
+    margin-bottom: 18px;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-bottom: 15px;
+}
+
+#testimonials span {
+  font-size: 35px;
+  font-weight: 1000;
+  line-height: 45px;
+  letter-spacing: -1px;
+  display: block;
+  text-align:center;
+}
+
+/* Card container styling */
+#card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 45px;
+}
+
+/* Individual cards */
+.cards {
+  background-color: #252058;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.7s ease;
+}
+
+.cards h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.cards p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.cards:hover{
+  scale: 1.1;
+}
+
+/* Circular images for the testimonials */
+.incards {
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-top: -40px;
+}
+
+/* Specific images for each testimonial */
+#james-image {
+  background-image: url("https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-173524.jpg");
+}
+
+#charles-image {
+  background-image: url("https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-173524.jpg");
+}
+
+#anderson-image {
+  background-image: url("https://img.freepik.com/free-vector/teen-boy-with-smile-face_1308-130771.jpg");
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  #testimonials h2 {
+      font-size: 22px;
+  }
+
+  #testimonials span {
+      font-size: 21px;
+      line-height: 30px;
+  }
+
+  #card {
+      flex-direction: column;
+      gap: 37px;
+  }
+
+  .cards {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+
+#testimonials{
+  margin-left: 11px;
+  margin-top: 2px;
+}
+
+  #testimonials h2 {
+      font-size: 20px;
+  }
+
+  #testimonials span {
+      font-size:20px;
+      line-height: 30px;
+  }
+
+  .cards {
+      width: 77%;
+      padding: 15px;
+      margin-left: 41px;
+      transition: all 0.7s ease;
+  }
+
+  .cards h2 {
+      font-size: 21px;
+  }
+
+  .cards p {
+      font-size: 12px;
+  }
+
+  .incards {
+      width: 100px;
+      height: 100px;
+  }
+
+  .cards:hover{
+    scale:1.1;
+  }
+}
+
+
+
+
+
+
+#call{
+  width: 100%;
+  padding: 10px;
+  margin-top: 92px;
+}
+
+.mybox{
+  width: 76%;
+  height: 360px;
+  background: rgb(128,128,215);
+  background: linear-gradient(45deg, rgba(128,128,215,1) 0%, rgba(32,33,88,0.9626225490196079) 95%);
+  margin-left: 148px;
+
+}
+
+.mybox h2{
+  color: black;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 5%;
+  margin-bottom: 18px;
+  text-align: center;
+  margin-bottom: 2px;
+  margin-bottom: 15px;
+}
+
+.mybox span{
+  font-size: 35px;
+  font-weight: 1000;
+  line-height: 45px;
+  letter-spacing: -1px;
+  display: block;
+  text-align:center;
+  color: white;
+  margin-bottom: 49px;
+}
+
+.mybox button{
+  width: 200px;
+  height: 55px;
+  border-radius: 25px;
+  margin: 0px auto;
+  font-size: 18px;
+  color: white;
+  font-weight: bolder;
+  padding: 0px 10px;
+  background-color: #000000;
+  display: block;
+}
+
+.action{
+  padding: 42px;
+} 
+
+#theme{
+  left: 25px;
+  background-color: white;
+  position: relative;
+  top: 24px;
+  border: 1px white solid;
+  border-radius: 25px;
+  width: fit-content;
+}
+
+#black{
+border-radius: 50%;
+width: 32px;
+height: 27px;
+background-color: #292323;
+}
+
+#purple{
+  border-radius: 50%;
+  width: 32px;
+  height: 27px;
+  background-color: #26045c;
+}
+
+@media (max-width:480px) {
+  
+
+  #call{
+margin-left: -112px;
+  }
+  
+  .mybox{
+    width: 334px;
+    /* height: 458px; */
+    padding: 30px 0px;
+  }
+
+  .mybox span{
+    font-size: 24px;
+  }
+
+  .mybox button{
+
+  }
+}
+
+
+
+/* General styling for the section */
+.about-section {
+  background-color: #000033;
+  color: white;
+  padding: 40px 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Styling for each card */
+.card {
+  background-color: #1a1a4d;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-block {
+  width: 215px;
+  height: 225px;
+  background-color: #000033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Card title */
+.card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Card description */
+.card p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card img{
+object-fit: cover;
+width: 225px;
+height: 220px;
+}
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+  .card-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  h3 {
+      font-size: 40px;
+  }
+
+  .card {
+      padding: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h3 {
+      font-size: 48px;
+  }
+}
+
+/* Responsive handling for smaller screens */
+.hidden-sm {
+  display: none;
+}
