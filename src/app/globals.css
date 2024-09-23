@@ -44,7 +44,7 @@ body{
   #navbar {
     flex-direction: column;
     height: auto;
-    padding: 10px;
+    padding: 9px 442px;
   }
 
   .items {
@@ -175,6 +175,7 @@ opacity: 1;
 /* Mobile */
 @media (max-width: 768px) {
   #hero {
+    margin-left: 127px;
     padding: 40px 0px;
     flex-direction: column;
     text-align: center;
@@ -185,13 +186,13 @@ opacity: 1;
   }
 
   #content span {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 55px;
+    line-height: 67px;
   }
 
   #content p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 26px;
   }
 
   #content .main {
@@ -201,16 +202,18 @@ opacity: 1;
   }
 
   #pic1 {
-    width: 350px;
-    height: 350px;
+    width: 660px;
+    height: 660px;
+    margin-left: 54px;
+    margin-top: 30px;
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
   #content span {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 42px;
   }
 
   #content p {
@@ -224,8 +227,8 @@ opacity: 1;
   }
 
   #pic1 {
-    width: 300px;
-    height: 300px;
+    width: 410px;
+    height: 410px;
     margin-top:30px;
     margin-left: 41px;
   }
@@ -344,6 +347,12 @@ opacity: 1;
     height: 90px;
     margin-bottom: 15px;
   }
+
+  #featured{
+    margin-left: 110px;
+    padding: 2px 115px;
+  }
+
 }
 
 /* Mobile Animation */
@@ -357,7 +366,8 @@ opacity: 1;
 /* Small Mobile */
 @media (max-width: 480px) {
   #featured h2 {
-    font-size: 18px;
+    font-size: 20px;
+ margin-left: -38px;
   }
 
   .company {
@@ -482,6 +492,7 @@ margin-left: 2px;
   #analytics {
     flex-direction: column;
     width: 100%;
+    margin-left: 60px;
   }
 
   #content2 {
@@ -490,18 +501,25 @@ margin-left: 2px;
     margin-left: 11px;
   }
 
+#analytics h2{
+  font-size: 30px;
+  font-weight: 600;
+margin-bottom: 18px;
+}
+
   #content2 span {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 42px;
+    line-height: 52px;
   }
 
   #content2 p {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   #analytics #pic2 {
-    width: 350px;
-    height: 280px;
+    width: 540px;
+    height: 540px;
   }
 }
 
@@ -627,27 +645,32 @@ margin-left: 2px;
     flex-direction: column;
     width: 100%;
     margin-top: 9px;
-    margin-left: 72px;
+    margin-left: 42px;
   }
 
  #analytics2 #content2 {
     text-align: center;
     width: 90%;
-    margin-left:-127px;
+    margin-left:80px;
   }
 
   #content2 span {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 42px;
+    line-height: 52px;
   }
 
   #content2 p {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   #analytics2 #pic2 {
-    width: 300px;
-    height: 230px;
+    width: 540px;
+    height: 540px;
+  }
+
+  #content2 .main{
+margin-left: 217px;
   }
 }
 
@@ -772,22 +795,29 @@ margin-left: 2px;
 /* Responsive Media Queries */
 @media (max-width: 768px) {
   #testimonials h2 {
-      font-size: 22px;
+      font-size: 30px;
   }
 
   #testimonials span {
-      font-size: 21px;
-      line-height: 30px;
+      font-size: 42px;
+      line-height: 52px;
   }
 
   #card {
       flex-direction: column;
-      gap: 37px;
+      gap: 52px;
+      margin-top: 63px;
+      margin-left: 154px;
+      width: 66%;
   }
 
   .cards {
       width: 90%;
   }
+
+  #testimonials{
+margin-left: 93px;
+}
 }
 
 @media (max-width: 480px) {
