@@ -369,6 +369,7 @@ opacity: 1;
   .features {
     animation: scroll-animation-small-mobile 2s ease-in-out 1s forwards;
     width: 1%;
+    opacity: 0.4;
   }
 }
 
@@ -726,7 +727,7 @@ margin-left: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.7s ease;
+  transition: all 0.7s ease ;
 }
 
 .cards h2 {
